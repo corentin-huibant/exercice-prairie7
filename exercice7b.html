@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Formulaire</title>
+  <link rel="stylesheet" href="styleb.css">
+</head>
+<body>
+  <fieldset class="identité">
+    <legend class=id>Votre identité</legend>
+    <form action="index.html" method="post">
+      <ol>
+        <li>Nom : <label for="Nom"></label><input type="text" name="Nom" placeholder="Nom"></li>
+        <li>Prénom : <label for="Prénom"></label><input type="text" name="Prénom" placeholder="Prénom"></li>
+        <li>Adresse mail : <label for="Adresse mail"></label><input type="text" name="Adresse mail" placeholder="Adresse mail"></li>
+      </ol>
+    </form>
+  </fieldset>
+  <fieldset class="adresse">
+    <legend class=ad>Adresse de livraison</legend>
+    <form action="index.html" method="post">
+      <ol>
+        <li>Adresse : <label for="adresse"></label><textarea type="adresse" name="Nom" row="8" cols="25"></textarea></li>
+        <li>Code postal : <label for="Code postal"></label><input type="text" name="Code postal" placeholder="Code postal"></li>
+        <li>Ville : <label for="Ville"></label><input type="text" name="Ville" placeholder="Ville"></li>
+      </ol>
+    </form>
+  </fieldset>
+  <fieldset class="informations">
+    <legend class="in">Informations de réglement</legend>
+    <form action="index.html" method="post">
+      <ol>
+        <li>Type de carte bancaire :
+          <br> <label for="visa"></label><input type="radio" name="visa"> VISA
+          <br> <label for="mastercard"></label><input type="radio" name="mastercard"> Mastercard
+          <li>Numéro de carte : <label for="numéro"></label><input type="text" name="numéro" placeholder="Numéro de carte"</li>
+          <li>Code de sécurité : <label for="Code de sécurité"></label><input type="text" name="Code de sécurité" placeholder="Code de sécurité"></li>
+          <li>Nom du titulaire : <label for="titulaire"></label><input type="text" name="titulaire" placeholder="Nom du titulaire"></li>
+        </ol>
+      </form>
+    </fieldset>
+    <button type="button" name="button">J'achète!</button>
+  </body>
+  </html>
